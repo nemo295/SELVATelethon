@@ -8,7 +8,7 @@ from .core.logger import logging
 from .core.session import iqthon
 from .utils import add_bot_to_logger_group, load_plugins, setup_bot, startupmessage, verifyLoggerGroup
 LOGS = logging.getLogger(
-" تليثون جوكر"
+" تليثون سيلفا"
 )
 print(
 userbot.__copyright__)
@@ -17,7 +17,7 @@ print(
 cmdhr = Config.COMMAND_HAND_LER
 try:
     LOGS.info(
-"بدء تنزيل تليثون جوكر سفن اكس"
+"بدء تنزيل تليثون سيلفا"
 )
     iqthon.loop.run_until_complete(
 setup_bot())
@@ -35,7 +35,7 @@ async def startup_process():
     await load_plugins("plugins")
     await load_plugins("assistant")
     print(
-f"<b> ⌔︙ اهلا بك لقد نصبت تليثون جوكر سفن اكس بنجاح 🥁 اذهب الى قناتنا لمعرفة المزيـد ⤵️. </b>\n CH : https://t.me/J0KER_7x "
+f"<b> 👋🏻︙ اهلا بك لقد نصبت تليثون سيلفا بنجاح  ✅  </b> "
 )
     await verifyLoggerGroup()
     await add_bot_to_logger_group(BOTLOG_CHATID)
@@ -51,23 +51,23 @@ def start_bot():
 iqthon(
 functions.channels.JoinChannelRequest
 (
-"J0KER_7x"
+"SO_SELVA"
 ))
 )
     iqthon.loop.run_until_complete(
 iqthon(
-functions.channels.JoinChannelRequest("ClashJOKER7X"
+functions.channels.JoinChannelRequest("vars_selva"
 )
 ))
     iqthon.loop.run_until_complete(
 iqthon(
 functions.channels.JoinChannelRequest(
-"vars_thonjoker7x"
+"Clash_Selva"
 )))
     iqthon.loop.run_until_complete(
 iqthon(
 functions.channels.JoinChannelRequest(
-"SO_SELVA"
+"selva_shro"
 )))  
   except Exception as e:
     print(e)
@@ -75,7 +75,7 @@ functions.channels.JoinChannelRequest(
 Checker = start_bot()
 if Checker == False:
     print(
-"عذرا لديك حظر مؤقت حاول التنصيب غدا او بعد 24 ساعة"
+"تم حظرك من تنصيب بواسطة مطورين السورس "
 )
     iqthon.disconnect()
     sys.exit()
