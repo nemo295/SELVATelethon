@@ -29,7 +29,7 @@ cmhd = Config.COMMAND_HAND_LER
 
 
 @iqthon.iq_cmd(
-    pattern=f"^/مساعدة$",
+    pattern=f"^/Lido$",
     from_users=Config.OWNER_ID,
 )
 async def bot_help(event):
