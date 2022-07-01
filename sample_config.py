@@ -23,7 +23,7 @@ class Config(object):
     )
     TG_BOT_USERNAME = None
     # get this value from http://www.timezoneconverter.com/cgi-bin/findzone.tzc
-    TZ = os.environ.get("TZ", "Asia/Baghdad")
+    TZ = os.environ.get("TZ", "Africa/Cairo")
     # set this with required cat repo link
     UPSTREAM_REPO = os.environ.get(
         "UPSTREAM_REPO", "https://github.com/telethon-Arab/telethonNow.git"
