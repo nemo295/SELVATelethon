@@ -1,6 +1,6 @@
-FROM telethonJOKER7x/JOKER-7X:slim-buster
+FROM SELVATelethon/nemo295:slim-buster
 
-RUN git clone https://github.com/JOKER-7X/TelethonJOKER7x /root/userbot
+RUN git clone https://github.com/nemo295/SELVATelethon /root/userbot
 WORKDIR /root/userbot
 
 ## Install requirements
