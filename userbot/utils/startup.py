@@ -46,7 +46,7 @@ async def load_plugins(folder):
 async def startupmessage():
     try:
         if BOTLOG:
-            Config.CATUBLOGO = await iqthon.tgbot.send_file(BOTLOG_CHATID, "https://telegra.ph/file/eeb32f76fc4f4212ceecb.mp4", caption="**⌯⦙ تـمّ تـحديـث تليثـون جوكر سفن اكس ✓  **  \n \n**⌯⦙ للحصول على اوامر السورس أرسل :** (  `.الاوامر`  ) \n\n**⌯⦙ القناة السورس : @J0KER_7x **\n\n**⌯⦙ فارات سورس تليثون  : @vars_thonjoker7x **\n**⌯⦙ كلايش تليثون :  @ClashJOKER7X**\n\nㅤㅤㅤㅤㅤㅤㅤㅤㅤ",                buttons= [[Button.url("𓆩 ❥آݪــمــبــرمــج ݪــيدو 𓆪", "https://t.me/J0KER7x"),],[Button.url("𓆩 ❥آݪــمـطورة شاهي 𓆪", "https://t.me/shahebrahem"),]]           )
+            Config.CATUBLOGO = await iqthon.tgbot.send_file(BOTLOG_CHATID, "https://telegra.ph/file/444692d94f35162813bd9.mp4", caption="**✅ ⦙  تـمّ تـحديـث تليثـون سيلفا ✓  **  \n \n**❇️ ⦙ لمعرفة اوامر السورس أرسل :** (  `.الاوامر`  ) \nㅤㅤㅤㅤㅤㅤㅤㅤㅤ",                buttons= [[Button.url("📢︙قناة السورس ", "https://t.me/SO_SELVA"), Button.url("🔰︙شروحات السورس ", "https://t.me/selva_shro"),],[Button.url("🔁︙قناة الفارات", "https://t.me/vars_selva"), Button.url("⚜️︙قناة كلايش", "https://t.me/Clash_Selva"),],[Button.url("👨🏼‍💻︙مبرمج السورس", "http://t.me/J0KER7x"),],[Button.url("🧑🏻‍💻︙مطور السورس¹", "http://t.me/uu_u_4"), Button.url("🧑🏻‍💻︙مطور السورس²", "http://t.me/DEEBEG"),],[Button.url("💬︙جروب السورس", "https://t.me/SO_SELVA"),]]           )
     except Exception as e:
         LOGS.error(e)
         return None
@@ -98,7 +98,7 @@ async def verifyLoggerGroup():
         except Exception as e:
             LOGS.error(                "⌯︙حدث استثناء عند محاولة التحقق من PRIVATE_GROUP_BOT_API_ID.\n"                + str(e)            )
     else:
-        descript = "⌯︙  عزيزي المستخدم هذه هي مجموعه الاشعارات يرجى عدم حذفها (إذا قمت بحذف المجموعة ، فسيتم فقد كل شيئ .) @J0KER_7x"
+        descript = "⌯︙  عزيزي المستخدم هذه هي مجموعه الاشعارات يرجى عدم حذفها (إذا قمت بحذف المجموعة ، فسيتم فقد كل شيئ .) @SO_SELVA "
         _, groupid = await create_supergroup(            "مجموعة اشعارات جوكر سفن اكس", iqthon, Config.TG_BOT_USERNAME, descript        )
         addgvar("PRIVATE_GROUP_BOT_API_ID", groupid)
         print("☭︙ تم إنشاء مجموعة المسـاعدة بنجاح وإضافتها إلى المتغيرات.")
@@ -118,7 +118,7 @@ async def verifyLoggerGroup():
         except Exception as e:
             LOGS.error(                "☭︙ حدث استثناء عند محاولة التحقق من PM_LOGGER_GROUP_ID.\n" + str(e)            )
     else:
-        descript = "⌯︙ وظيفه هذه المجموعة لحفظ وتخزين رسائل ( لو مش عايز جروب ده احذفه نهائيا ) 🙂 \n  الـسورس : - @J0KER_7x"
+        descript = "⌯︙ وظيفه هذه المجموعة لحفظ وتخزين رسائل ( لو مش عايز جروب ده احذفه نهائيا ) 🙂 \n  الـسورس : - @SO_SELVA "
         _, groupid = await create_supergroup(            "مجموعة تخزين رسايل", iqthon, Config.TG_BOT_USERNAME, descript        )
         addgvar("PM_LOGGER_GROUP_ID", groupid)
         print("☭︙ تم إنشاء مجموعة خاصة لـ PRIVATE_GROUP_BOT_API_ID بنجاح وإضافتها إلى المتغيرات.")
