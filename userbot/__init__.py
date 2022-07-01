@@ -4,17 +4,17 @@ from .Config import Config
 from .core.logger import logging
 from .core.session import iqthon
 from .sql_helper.globals import addgvar, delgvar, gvarstatus
-__version__ = "7.5"
+__version__ = "2.0"
 __license__ = "GNU Affero General Public License v3.0"
-__author__ = "<t.me/J0KER_7x>"
-__copyright__ = "telethon 7x (C) 2021 - 2022  " + __author__
+__author__ = "<t.me/SO_SELVA>"
+__copyright__ = " SELVATelethon (C) 2022 - 2023  " + __author__
 iqthon.version = __version__
 iqthon.tgbot.version = __version__
 LOGS = logging.getLogger("IQTHON")
 bot = iqthon
 StartTime = time.time()
 catversion = "7.2"
-if Config.UPSTREAM_REPO == "TelethonJOKER7x":
+if Config.UPSTREAM_REPO == "SELVATelethon":
     UPSTREAM_REPO_URL = "https://github.com/telethon-Arab/telethonNow"
 else:
     UPSTREAM_REPO_URL = Config.UPSTREAM_REPO
